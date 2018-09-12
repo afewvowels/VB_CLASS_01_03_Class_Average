@@ -44,9 +44,16 @@
             CounterInteger += 1
         Loop
 
-        ResultsTextAreaLabel.Text = "The average grade of " & GradesListBox.Items.Count.ToString &
-                                    " grades, a total of " & GradeAccumulatorDecimal.ToString & " points is " &
-                                    (GradeAccumulatorDecimal / GradesListBox.Items.Count).ToString
+        'ResultsTextAreaLabel.Text = "The average grade of " & GradesListBox.Items.Count.ToString & " grades," &
+        '                           ControlChars.NewLine & "a total of " & GradeAccumulatorDecimal.ToString & " points is" &
+        '                           ControlChars.NewLine & (GradeAccumulatorDecimal / GradesListBox.Items.Count).ToString("n1")
+
+        ResultsTextAreaLabel.Text = _
+            String.Format("The total of the {0} grade(s) is {1}.{2}" & "Class average grade is: {3:n1}",
+                          GradesListBox.Items.Count,
+                          GradeAccumulatorDecimal,
+                          Environment.NewLine,
+                          GradeAccumulatorDecimal / GradesListBox.Items.Count)
     End Sub
 
     Private Sub ClearGradesButton_Click(sender As Object, e As EventArgs) Handles ClearGradesButton.Click
