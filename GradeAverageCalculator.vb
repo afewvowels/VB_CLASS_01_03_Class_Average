@@ -40,12 +40,13 @@
         'Loop
 
         Do Until CounterInteger = GradesListBox.Items.Count
-
             GradeAccumulatorDecimal += GradesListBox.Items(CounterInteger)
             CounterInteger += 1
         Loop
 
-        ResultsTextAreaLabel.Text = (GradeAccumulatorDecimal / GradesListBox.Items.Count).ToString
+        ResultsTextAreaLabel.Text = "The average grade of " & GradesListBox.Items.Count.ToString &
+                                    " grades, a total of " & GradeAccumulatorDecimal.ToString & " points is " &
+                                    (GradeAccumulatorDecimal / GradesListBox.Items.Count).ToString
     End Sub
 
     Private Sub ClearGradesButton_Click(sender As Object, e As EventArgs) Handles ClearGradesButton.Click
