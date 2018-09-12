@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Grade_Average_Calculator
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.ResultsTextAreaLabel.TabIndex = 8
         Me.ResultsTextAreaLabel.Text = "Label1"
         '
-        'Form1
+        'Grade_Average_Calculator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -125,8 +125,8 @@ Partial Class Form1
         Me.Controls.Add(Me.EnterLabel)
         Me.Controls.Add(Me.GradesLabel)
         Me.Controls.Add(Me.GradesListBox)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Grade_Average_Calculator"
+        Me.Text = "Grade Average Calc"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
