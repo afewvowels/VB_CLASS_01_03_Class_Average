@@ -109,7 +109,7 @@ Partial Class Grade_Average_Calculator
         Me.ResultsTextAreaLabel.Name = "ResultsTextAreaLabel"
         Me.ResultsTextAreaLabel.Size = New System.Drawing.Size(173, 79)
         Me.ResultsTextAreaLabel.TabIndex = 8
-        Me.ResultsTextAreaLabel.Text = "Label1"
+        Me.ResultsTextAreaLabel.Text = "Results will appear here."
         '
         'Grade_Average_Calculator
         '

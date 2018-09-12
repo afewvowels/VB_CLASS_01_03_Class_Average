@@ -34,7 +34,13 @@
         Dim CounterInteger As Integer
         Dim GradeAccumulatorDecimal As Decimal
 
-        Do While CounterInteger < GradesListBox.Items.Count
+        'Do While CounterInteger < GradesListBox.Items.Count
+        'GradeAccumulatorDecimal += GradesListBox.Items(CounterInteger)
+        'CounterInteger += 1
+        'Loop
+
+        Do Until CounterInteger = GradesListBox.Items.Count
+
             GradeAccumulatorDecimal += GradesListBox.Items(CounterInteger)
             CounterInteger += 1
         Loop
